@@ -4,5 +4,9 @@
 
 if [ $1 ]
 then
-	echo "Welcome to the LINUX Research Lab, $1!"
+	NAME="$1"
+else
+	read -p "Enter your name: " NAME
 fi
+
+echo "Welcome to the LINUX Research Lab, $NAME!"
