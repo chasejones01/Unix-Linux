@@ -8,4 +8,10 @@ then
 		echo "Error: No filename was entered. Exiting..."
 		exit 1
 fi	
-	
+
+if [ -f "$FILENAME" ]
+then
+	echo "File $FILENAME already exists."
+else
+	echo "File $FILENAME was not found."
+fi	
