@@ -14,4 +14,13 @@ then
 	echo "File $FILENAME already exists."
 else
 	echo "File $FILENAME was not found."
+	read -p "Do you want to create $FILENAME? (y/n)--> " ANSWER
+       	if [[ "$ANSWER" == "y" || "$ANSWER" == "Y" ]]
+	then
+		touch $FILENAME
+		echo "File $FILENAME was created."
+	else
+		echo "Exiting without creating the file."
+		exit 0
+	fi
 fi	
