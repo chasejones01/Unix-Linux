@@ -9,3 +9,9 @@ then
 	echo "Error: Input must be a positive number."
 	exit 1
 fi
+
+while [ "$N" -gt 0 ]
+do
+	echo "$N"
+	N=$((N - 1))
+done
