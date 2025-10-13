@@ -25,7 +25,7 @@ do
 			who
 			;;
 		4)
-			exit
+			echo "Exiting menu..."
 			;;
 		*)
 			echo "Invalid choice"
