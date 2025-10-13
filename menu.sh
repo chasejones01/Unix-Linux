@@ -11,3 +11,21 @@ echo "3) Show logged-in users"
 echo "4) Exit"
 
 read -p "Enter your choice: " CHOICE
+
+case $CHOICE in
+	1)
+		date
+		;;
+	2)
+		pwd
+		;;
+	3)
+		who
+		;;
+	4)
+		exit
+		;;
+	*)
+		echo "Invalid choice"
+		;;
+esac
