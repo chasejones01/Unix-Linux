@@ -15,3 +15,5 @@ do
 	echo "$N"
 	N=$((N - 1))
 done
+
+echo "Liftoff!"
