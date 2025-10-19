@@ -6,3 +6,5 @@ until [ "$ANSWER" = "YES" -o "$ANSWER" = "Yes" -o "$ANSWER" = "yes" ]
 do
 	read -p "Type YES to continue: " ANSWER
 done
+
+echo "Confirmation recieved. Proceeding..."
