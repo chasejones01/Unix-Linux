@@ -11,5 +11,9 @@ function show_user() {
 	echo "Hostname: $HOSTNAME"
 }
 
-show_date
-show_user
+function main() {
+	show_date
+	show_user
+}
+
+main
