@@ -2,7 +2,7 @@
 
 # until_confirm.sh waits for user confirmation
 
-until [ "$ANSWER" = "YES" ]
+until [ "$ANSWER" = "YES" -o "$ANSWER" = "Yes" -o "$ANSWER" = "yes" ]
 do
 	read -p "Type YES to continue: " ANSWER
 done
