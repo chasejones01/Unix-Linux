@@ -9,3 +9,7 @@ USERNAME=$USER
 DATE=$(date)
 
 echo "Task run by $USERNAME on $DATE" >> summary.txt
+
+echo "Daily automation complete. Report saved."
+echo "----- Summary.txt File -----"
+cat summary.txt
